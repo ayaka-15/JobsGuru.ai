@@ -27,9 +27,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent"> <!-- justify-content-betweenのおかげで間にスペースが入る -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item active">
                 <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -49,7 +49,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">Log in</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link px-md-3"  id="btn-header-signup" href="signup.html">Sign Up</a>
                 </li>
             </ul>
@@ -60,21 +60,26 @@
         <!-- Content Section -->
         <section id="header-home">
             <div class="card text-white">
-                <div class="img-overlay"><img src="img/image_home_01.jpg" class="card-img" alt="..."></div>
+                <div class="img-overlay"><img src="img/image_home_01.jpg" class="card-img" alt="Shaking hands with coworker / AI"></div>
                 <div class="card-img-overlay justify-content-center d-flex flex-column align-items-center">
-                  <h1 class="card-title text-center display-3" id="header-home-h1">Welcome to JobsGuru.ai</h1>
-                  <button type="submit" class="wide-button btn btn-success mx-auto btn-click rounded-pill" id="btn-signUpOurService">Sign Up Our Service</button>
+                    <!-- <h1 class="card-title text-center display-3" id="header-home-h1">Welcome to JobsGuru.ai</h1> -->
+                    <!-- Mobile size -->
+                    <h1 class="d-md-none" id="header-home-h1-mobile">Welcome to JobsGuru.ai</h1>
+                    <button type="button" class="d-md-none wide-button btn btn-success mx-auto btn-click rounded-pill" id="btn-signUpOurService-mobile" onclick="location.href='./signup.html'">Sign Up Our Service</button>
+                    <!-- Laptop size -->
+                    <h1 class="d-none d-md-block" id="header-home-h1-laptop">Welcome to JobsGuru.ai</h1>
+                    <button type="button" class="d-none d-md-block wide-button btn btn-success mx-auto btn-click rounded-pill" id="btn-signUpOurService-laptop" onclick="location.href='./signup.html'">Sign Up Our Service</button>
                 </div>
 
             </div>
         </section>
-        <section class="mt-5" id="section-home-01">
+        <section class="mt-5" id="section-ourMission">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 pe-md-5 section-home-01-div">
+                    <div class="col-md-6 pe-md-5">
                         <div class="text-wrapper">
-                            <p class="section-home-01-p">Our mission:</p>
-                            <h2 class="section-home-01-h2">
+                            <p class="section-ourMission-p">Our mission:</p>
+                            <h2 class="section-ourMission-title">
                                 Get You Employed Fast!
                             </h2>
                             <p class="display-7">
@@ -82,28 +87,28 @@
                                 By seamlessly integrating advanced Generative Al, JobsGuru eliminates the uncertainties, frustrations, and inefficiencies typically associated with job applications, ushering in a new era of intelligent and precise job search.
                             </p>
                         </div>
-                        <div class="col-6 w-100 mt-4 text-center">
-                            <button type="submit" class="wide-button btn btn-success mx-auto mx-md-0 d-block btn-click rounded-pill" id="moreDetails">More Details</button>
+                        <div class="col-6 w-100 my-4 text-center text-md-start">
+                            <button type="button" class="wide-button btn btn-success btn-click rounded-pill" id="moreDetails" onclick="location.href='./aboutus.html'">More Details</button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card border-0">
-                            <img src="img/image_home_02.jpg" class="card-img card-image-fit-01" alt="">
+                            <img src="img/image_home_02.jpg" class="card-img card-image-fit-01" alt="Creating a resume">
                         </div>
                         <div class="card mt-4 border-0">
-                            <img src="img/image_home_03.jpg" class="card-img card-image-fit-01" alt="">
+                            <img src="img/image_home_03.jpg" class="card-img card-image-fit-01" alt="Job hunting using AI">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-none d-md-block">
                         <div class="card border-0">
-                            <img src="img/image_home_04.jpg" class="card-img card-image-fit-02" alt="">
+                            <img src="img/image_home_04.jpg" class="card-img card-image-fit-02" alt="Group interview">
                         </div>
                     </div>
                 </div> <!-- .row -->
             </div> <!-- .container -->
         </section>
-        <section class="mt-5" id="section-home-02">
-            <div class="container px-4 py-5" id="hanging-icons">
+        <section class="mt-5" id="section-features">
+            <div class="container px-4 py-4 py-md-5">
                 <div class="row row-cols-1">
                     <div class="col text-center">
                         <h2 class="mb-3">We place the job seeker</h2>
@@ -111,13 +116,13 @@
                             skills alignment into your job search. We provide these five benefits to job- seekers:</p>
                     </div>
                 </div>
-                <div class="row g-4 py-5 row-cols-1 row-cols-md-2">
+                <div class="row g-4 py-3 py-md-5 row-cols-1 row-cols-md-2">
                   <div class="col d-flex align-items-start">
                     <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                       <svg class="bi" width="3em" height="3em"><image class="home-icon" href="./img/image_home_icon_01.png"/></svg>
                     </div>
                     <div>
-                      <h3 class="fs-2 text-body-emphasis mt-0">Resume - Job Matching</h3>
+                      <h3 class="fs-3 text-body-emphasis mt-0">Resume - Job Matching</h3>
                       <p>Just upload your resume and job description, and immediately discover how well you align with a job opportunity. No more guessing, just precise, Al-driven guidance.</p>
                     </div>
                   </div>
@@ -126,18 +131,18 @@
                         <svg class="bi" width="3em" height="3em"><image class="home-icon" href="./img/image_home_icon_02.png"/></svg>
                     </div>
                     <div>
-                      <h3 class="fs-2 text-body-emphasis mt-0">Advanced Resume Optimization</h3>
+                      <h3 class="fs-3 text-body-emphasis mt-0">Advanced Resume Optimization</h3>
                       <p>It will tweak your resume, mirroring the language of the job description and by-pass the ATS System filter, ensuring you're the best candidate for the job.</p>
                     </div>
                   </div>
                 </div>
-                <div class="row g-4 py-5 row-cols-1 row-cols-md-2">
+                <div class="row g-4 py-3 py-md-5 row-cols-1 row-cols-md-2">
                     <div class="col d-flex align-items-start">
                       <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                         <svg class="bi" width="3em" height="3em"><image class="home-icon" href="./img/image_home_icon_03.png"/></svg>
                       </div>
                       <div>
-                        <h3 class="fs-2 text-body-emphasis mt-0">Customized Cover Letters</h3>
+                        <h3 class="fs-3 text-body-emphasis mt-0">Customized Cover Letters</h3>
                         <p>Jobs Guru will craft cover letters that are genuinely you, yet perfectly attuned to the role's needs so you're noticed by hiring managers.</p>
                       </div>
                     </div>
@@ -146,18 +151,18 @@
                         <svg class="bi" width="3em" height="3em"><image class="home-icon" href="./img/image_home_icon_04.png"/></svg>
                       </div>
                       <div>
-                        <h3 class="fs-2 text-body-emphasis mt-0">Tailored Interview Questions</h3>
+                        <h3 class="fs-3 text-body-emphasis mt-0">Tailored Interview Questions</h3>
                         <p>We provide you with twelve questions tailored to your experience and the role, so you can practice and ace the interview.</p>
                       </div>
                     </div>
                 </div>
-                <div class="row g-4 py-5 row-cols-1 row-cols-md-2">
+                <div class="row g-4 py-3 py-md-5 row-cols-1 row-cols-md-2">
                     <div class="col d-flex align-items-start">
                       <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                         <svg class="bi" width="3em" height="3em"><image class="home-icon" href="./img/image_home_icon_05.png"/></svg>
                       </div>
                       <div>
-                        <h3 class="fs-2 text-body-emphasis mt-0">Mock Interview Scheduler</h3>
+                        <h3 class="fs-3 text-body-emphasis mt-0">Mock Interview Scheduler</h3>
                         <p>You can schedule Mock interviews if you're looking to gain confidence and polish their interview skills. Live practice and personalized coaching, are both excellent ways to prepare effectively for real interviews.</p>
                       </div>
                     </div>
@@ -165,7 +170,7 @@
                         <div class="col-6 w-100 text-center" id="area-signupnow">
                             <p><strong>Free Account Available</strong></p>
                             <p>Only Takes 2 Minutes</p>
-                            <button type="submit" class="wide-button btn btn-success mx-auto d-block btn-click rounded-pill" id="btn-signupnow">Sign Up Now!</button>
+                            <button type="button" class="wide-button btn btn-success mx-auto d-block btn-click rounded-pill" id="btn-signupnow" onclick="location.href='./signup.html'">Sign Up Now!</button>
                         </div>
                     </div>
                 </div>
