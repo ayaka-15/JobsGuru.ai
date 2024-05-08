@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.jobsguru.ai/frontend/img/favicon-32x32.png" type="image/x-icon">
+    <title>Job Resume Match & Tweak Resume</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- file upload icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-md text-center navbar-dark">
+                <div class="row row-cols-md-2 row-cols-1 align-items-center">
+                    <a class="active-img col-2 col-md-2 p-0" href="../home.html"><img src="../img/logo.png" width="80" height="80"></a>
+                    <div class="d-none d-md-block col-md-7 text-start p-0">
+                        <span class="companyName">Company name :</span><span class="companyNameDisplay"> Google </span>
+                        <span class="jobTitle">Job Title :</span><span class="jobTitleDisplay"> Product Manager </span>
+                    </div>
+                    <div class="col-8 col-md-3 d-inline d-md-flex justify-content-end pe-md-5">
+                        <span class="align-self-center me-3" id="userNameDisplay"> Jane Doe </span>
+                        <a href="/frontend/home.html" class="btn btn-success active-btn3 ml-2" style="color: white; text-decoration: none; padding: 5px 30px;"> Log Out </a>
+                    </div>           
+                    <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav col-md-12">
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication">Dashboard</button></a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/new_start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/new_upload_files.html" class=""><button type="button" class="btn-jobApplication">Upload Documents</button></a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/new_job_resume_match.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-current">Match and Tweak Resume</button></a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/new_cover_letter.html" class="">
+                                    <button type="button" class="btn-jobApplication" style="font-size: 13px;">
+                                        Cover Letter &amp;<br>
+                                        Interview Question &amp;<br>
+                                        Mock Interview
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/new_finished_misc.html" class=""><button type="button" class="btn-jobApplication">Misc.</button></a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-block d-md-none col-md-6 text-center mt-3">
+                <span class="companyName">Company name:</span><span class="companyNameDisplay"> Google </span><br>
+                <span class="jobTitle">Job Title:</span><span class="jobTitleDisplay"> Product Manager </span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center mt-5">Match and Tweak Resume</h1>
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <div class="maintabs-match-tewak-resume">
+                        <ul class="nav nav-tabs col-md-8 offset-md-2" id="mainTabs">
+                            <li class="nav-item" style="width: 50%">
+                                <a class="nav-link active text-center" href="#jobResumeMatch" data-bs-toggle="tab">Job Resume Match</a>
+                            </li>
+                            <li class="nav-item" style="width: 50%">
+                                <a class="nav-link text-center" href="#tweakResume" data-bs-toggle="tab">Tweak Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- start tabs - for Job Resume Match -->
+                        <div class="tab-pane fade show active" id="jobResumeMatch">
+                            <p class="d-block mt-4 text-center">Your skills outlined in your resume is now being analyzed and matched with the job requirements and will generate Job Resume Match report.</p>
+
+                            <!-- start Textarea to display the results -->
+                            <div class="extracted-text-container text-center">
+                                <textarea id="jobResumeMatchTextarea" class="extracted-text" readonly=""></textarea>
+                                    <button id="jobResumeMatchDownloadBtn" class="download-btn rounded-pill m-md-3 mx-1 my-3">
+                                        Download
+                                    </button>
+                            </div>
+                            <!-- end Textarea to display the results -->
+                            <div class="text-center">
+                                <p class="p-md-4 p-2 d-md-inline d-block">What is “Job Resume Match”? <a class="p-md-3 d-md-inline d-block" href="#">Watch a video</a></p>
+                            </div>
+                        </div>
+                        <!-- end tabs - for Job Resume Match -->
+
+                        <!-- start tabs - for Tweak Resume -->
+                        <div class="tab-pane fade" id="tweakResume">
+                            <p class="d-block mt-4 text-center">Your resume is now being tweaked to be aligned with the job description and to make it ATS friendly.</p>
+
+                            <!-- start Textarea to display the results -->
+                            <div class="extracted-text-container text-center">
+                                <textarea id="tweakResumeTextarea" class="extracted-text" readonly=""></textarea>
+                                    <button id="tweakResumeDownloadBtn" class="download-btn rounded-pill m-md-3 mx-1 my-3">
+                                        Download
+                                    </button>
+                            </div>
+                            <!-- end Textarea to display the results -->
+                            <div class="text-center">
+                                <p class="p-md-4 p-2 d-md-inline d-block">What is “Tweak Resume”? <a class="p-md-3 d-md-inline d-block" href="#">Watch a video</a></p>
+                            </div>
+                        </div>
+                        <!-- end tabs - for Tweak Resume -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
