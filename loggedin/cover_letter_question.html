@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.jobsguru.ai/frontend/img/favicon-32x32.png" type="image/x-icon">
+    <title>Cover Letter & Interview Question & Mock Interview</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- file upload icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/loggedin_common.css">
+    <link rel="stylesheet" href="css/ai_services_common.css">
+    <link rel="stylesheet" href="css/cover_letter_question.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="/frontend/loggedin/css/loggedin_common.css">
+        <link rel="stylesheet" href="/frontend/loggedin/css/ai_services_common.css">
+    <link rel="stylesheet" href="/frontend/loggedin/css/cover_letter_question.css"> -->
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-md text-center navbar-dark">
+                <div class="row row-cols-md-2 row-cols-1 align-items-center">
+                    <a class="active-img col-2 col-md-2 p-0" href="/frontend/loggedin/dashboard.html"><img src="../img/logo.png" width="80" height="80"></a>
+                    <div class="d-none d-md-block col-md-7 text-start p-0">
+                        <span class="companyName">Company name :</span><span class="companyNameDisplay"> Google </span>
+                        <span class="jobTitle">Job Title :</span><span class="jobTitleDisplay"> Product Manager </span>
+                    </div>
+                    <div class="col-8 col-md-3 d-inline d-md-flex justify-content-end pe-md-5">
+                        <span class="align-self-center me-3" id="userNameDisplay"> Jane Doe </span>
+                        <a href="/frontend/home.html" class="btn btn-success active-btn3 ml-2" style="color: white; text-decoration: none; padding: 5px 30px;"> Log Out </a>
+                    </div>           
+                    <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav col-md-12">
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication">Dashboard</button></a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/upload_files.html" class=""><button type="button" class="btn-jobApplication">Upload Documents</button></a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/job_resume_match.html" class=""><button type="button" class="btn-jobApplication">Match and Tweak Resume</button></a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/cover_letter_question.html" class="">
+                                    <button type="button" class="btn-jobApplication btn-jobApplication-current">
+                                        Cover Letter &amp;<br>
+                                        Question &amp; Mock
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication">Misc.</button></a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-block d-md-none col-md-6 text-center mt-3">
+                <span class="companyName">Company name:</span><span class="companyNameDisplay"> Google </span><br>
+                <span class="jobTitle">Job Title:</span><span class="jobTitleDisplay"> Product Manager </span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center mt-5">Cover Letter & Interview Question & Mock Interview</h1>
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <div class="maintabs-cover-letter">
+                        <ul class="nav nav-tabs col-md-8 offset-md-2" id="mainTabs">
+                            <li class="nav-item" style="width: 33.33%">
+                                <a class="nav-link active text-center" href="#coverLetter" data-bs-toggle="tab">Cover Letter</a>
+                            </li>
+
+                            <li class="nav-item" style="width: 33.33%">
+                                <a class="nav-link text-center" href="#interviewQuestion" data-bs-toggle="tab">Interview Question</a>
+                            </li>
+
+                            <li class="nav-item" style="width: 33.33%">
+                                <a class="nav-link text-center" href="#mockInterview" data-bs-toggle="tab">Mock Interview</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- start tabs - for Cover Letter -->
+                        <div class="tab-pane fade  show active" id="coverLetter">
+                            <p class="d-block mt-4 text-center lh-lg">
+                                Ready for a customized cover letter that resonates with hiring managers.<br>
+                                Please check the button and submit to generate a customized Cover Letter.
+                            </p>
+                            <div class="text-center">
+                                <button type="submit" class="wide-button btn btn-success btn-block btn-click submit-btn mt-1 mb-5">Submit Now</button>
+                            </div>
+
+                            <!-- start Textarea to display the results -->
+                            <div class="extracted-text-container text-center">
+                                <textarea id="coverLetterTextarea" class="extracted-text" readonly=""></textarea>
+                                    <button id="coverLetterDownloadBtn" class="download-btn m-md-3 mx-1 my-3">
+                                        Download
+                                    </button>
+                            </div>
+                            <!-- end Textarea to display the results -->
+                            <div class="text-center">
+                                <p class="p-md-4 p-2 d-md-inline d-block">What is “Cover Letter”? <a class="p-md-3 d-md-inline d-block" href="#">Watch a video</a></p>
+                            </div>
+                        </div>
+                        <!-- end tabs - for Cover Letter -->
+
+                        <!-- start tabs - for Interview Question -->
+                        <div class="tab-pane fade" id="interviewQuestion">
+                            <p class="d-block mt-4 text-center lh-lg">
+                                JobsGuru will generate likely Interview Questions.<br>
+                                Please check the button and submit for interview questions.
+                            </p>
+                            <div class="text-center">
+                                <button type="submit" class="wide-button btn btn-success btn-block btn-click submit-btn mt-1 mb-5">Submit Now</button>
+                            </div>
+
+                            <!-- start Textarea to display the results -->
+                            <div class="extracted-text-container text-center">
+                                <textarea id="interviewQuestionTextarea" class="extracted-text" readonly=""></textarea>
+                                    <button id="interviewQuestionDownloadBtn" class="download-btn m-md-3 mx-1 my-3">
+                                        Download
+                                    </button>
+                            </div>
+                            <!-- end Textarea to display the results -->
+                            <div class="text-center">
+                                <p class="p-md-4 p-2 d-md-inline d-block">What is “Interview Question”? <a class="p-md-3 d-md-inline d-block" href="#">Watch a video</a></p>
+                            </div>
+                        </div>
+                        <!-- end tabs - for Interview Question -->
+
+                        <!-- start tabs - for Mock Interview -->
+                        <div class="tab-pane fade" id="mockInterview">
+                            <div class="step-content-form">
+                                <div class="row">
+                                    <div class="col-md-8 offset-md-2">
+                                        <p class="d-block mt-4 text-center lh-lg"> When you want to practice and get human feedback and coaching just fill in the dates and time with time zone to request a mock interview sessions and one of our technical recruiter will reach out to you.</p>
+                    
+                                        <!-- add some spacing -->
+                                        <div style="height: 20px;"></div>
+                                                           
+                                        <form onsubmit="submitForm_Mock(event); return false;">
+                                            <!-- Option 1 -->
+                                            <div class="row">
+                                                <div class="col-md-4 mb-3">      
+                                                    <label for="date" class="col-1 col-form-label">Date</label>
+                                                    <div class="col">
+                                                        <div class="input-group date" id="datepicker">
+                                                            <input type="text" class="form-control" id="date" placeholder="Mock Interview Date">
+                                                                <span class="input-group-append">
+                                                                    <span class="input-group-text bg-light d-block">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </span>
+                                                                </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="date" class="col-1 col-form-label">Time</label>
+                                                    <div class="col">
+                                                        <div class="input-group" data-placement="bottom" data-align="bottom" data-autoclose="true">
+                                                            <input type="text" class="form-control" id="time" placeholder="Preferred Interview Time">
+                                                            <!-- <span class="input-group-text bg-light d-block"> -->
+                                                            <!-- <i class="bi bi-clock"></i> -->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="USTZ" class="col-1 col-form-label">TimeZone</label>
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <select name="US_TimeZone" id="USTZ" class="form-control">
+                                                                <option value="EST">Eastern Standard Time</option>
+                                                                <option value="CST">Central Standard Time</option>
+                                                                <option value="MST">Mountain Standard Time</option>
+                                                                <option value="PST">Pacific Standard Time</option>
+                                                            </select>
+                                                            <!-- You can uncomment and use this icon if needed
+                                                            <span class="input-group-text bg-light d-block">
+                                                                <i class="bi bi-pin-map-fill"></i>
+                                                            </span>
+                                                            -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of option 1 -->
+                                    
+                                            <!-- option 2-->
+                                            <div class="row">
+                                                <div class="col-md-4 mb-3">      
+                                                    <label for="date" class="col-1 col-form-label">Date</label>
+                                                    <div class="col">
+                                                        <div class="input-group date" id="datepicker2">
+                                                            <input type="text" class="form-control" id="date2" placeholder="Mock Interview Date">
+                                                                <span class="input-group-append2">
+                                                                    <span class="input-group-text bg-light d-block">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </span>
+                                                                </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="date" class="col-1 col-form-label">Time</label>
+                                                    <div class="col">
+                                                        <div class="input-group" data-placement="bottom" data-align="bottom" data-autoclose="true">
+                                                            <input type="text" class="form-control" id="time2" placeholder="Preferred Interview Time">
+                                                            <!-- <span class="input-group-text bg-light d-block"> -->
+                                                            <!-- <i class="bi bi-clock"></i> -->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="USTZ" class="col-1 col-form-label">TimeZone</label>
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <select name="US_TimeZone" id="USTZ2" class="form-control">
+                                                                <option value="EST">Eastern Standard Time</option>
+                                                                <option value="CST">Central Standard Time</option>
+                                                                <option value="MST">Mountain Standard Time</option>
+                                                                <option value="PST">Pacific Standard Time</option>
+                                                            </select>
+                                                            <!-- You can uncomment and use this icon if needed
+                                                            <span class="input-group-text bg-light d-block">
+                                                                <i class="bi bi-pin-map-fill"></i>
+                                                            </span>
+                                                            -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of option 2 -->
+                                
+                                            <div class="row">
+                                                <div class="col-md-12 d-flex justify-content-center mt-3">
+                                                    <button type="reset" class="btn btn-secondary clear-btn m-md-1 mx-1 my-3">Clear</button>
+                                                    
+                                                    <!-- Spacer div with a width of one column -->
+                                                    <div class="col-1"></div> 
+                                            
+                                                    <button type="submit" class="btn btn-success submit-btn m-md-1 mx-1 my-3">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tabs - for Mock Interview -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container mt-5">
+            <p class="text-center" id="copyright">© 2023 JobsGuru.ai All rights reserved.</p>
+        </div>
+    </footer>      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -13,19 +13,23 @@
     
     <!-- Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
     <!-- file upload icon -->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loggedin_common.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="/frontend/loggedin/css/loggedin_common.css">
+    <link rel="stylesheet" href="/frontend/loggedin/css/dashboard.css"> -->
+
 </head>
 <body>
     <header>
         <div class="container-fluid px-0">
             <nav class="navbar navbar-expand-md text-center navbar-dark">
                 <div class="row row-cols-md-2 row-cols-1 align-items-center w-100 mx-0">
-                    <a class="active-img col-2 col-md-2 p-0" href="../home.html"><img src="../img/logo.png" width="80" height="80"></a>
+                    <a class="active-img col-2 col-md-2 p-0" href="/frontend/loggedin/dashboard.html"><img src="../img/logo.png" width="80" height="80"></a>
                     <div class="col-8 col-md-10 d-inline d-md-flex justify-content-end pe-md-5">
                         <span class="align-self-center me-3" id="userNameDisplay"> Jane Doe </span>
                         <a href="/frontend/home.html" class="btn btn-success active-btn3 ml-2" style="color: white; text-decoration: none; padding: 5px 30px;"> Log Out </a>
@@ -40,10 +44,10 @@
                                 <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-current">Dashboard</button></a>
                             </li>
                             <li class="nav-item col-md-2">
-                                <a href="/frontend/loggedin/new_start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
+                                <a href="/frontend/loggedin/start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
                             </li>
                             <li class="nav-item col-md-2">
-                                <a href="/frontend/loggedin/new_finished_misc.html" class=""><button type="button" class="btn-jobApplication">Misc.</button></a> 
+                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication">Misc.</button></a> 
                             </li>
                         </ul>
                     </div>
@@ -56,12 +60,12 @@
         <div class="container mt-5">
             <div class="row">
                 <h1 class="text-center">Dashboard</h1>
-                <div id="show-job-appplications-table" class="col-12 text-align mt-4" style="display: block;">
+                    <div id="show-job-appplications-table" class="col-12 text-align mt-4" style="display: block;">
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">Company name</th>
-                                <th scope="col">Job title</th>
+                                <th scope="col">Company name</th>
+                                <th scope="col">Job title</th>
                                 <th scope="col" class="d-none d-md-table-cell">Application stage</th>
                                 <th scope="col" class="d-none d-md-table-cell">Phone Screen</th>
                                 <th scope="col" class="d-none d-md-table-cell">Interview</th>
@@ -77,14 +81,48 @@
                                 <td class="d-none d-md-table-cell">Screen Call 3</td>
                                 <td class="d-none d-md-table-cell">Interview Round 2</td>
                                 <td class="d-none d-md-table-cell">Hired</td>
-
-                                
                                 <td>
-                                    <button type="button" class="btn btn-success btn-edit m-1 px-md-4" data-job-app-id="6635500d0ea7639201a6643f">Select/View</button>
-                                    <button type="button" class="btn btn-success btn-update m-1 px-md-3" data-bs-toggle="modal" data-bs-target="#jobAppModal" data-jobappid="6635500d0ea7639201a6643f">Update Status</button>
+                                    <button type="button" class="btn btn-success btn-edit m-1 px-4" data-job-app-id="6635500d0ea7639201a6643f">Select/View</button>
+                                    <button type="button" class="btn btn-success btn-update m-1 px-3" data-bs-toggle="modal" data-bs-target="#jobAppModal" data-jobappid="6635500d0ea7639201a6643f">Update Status</button>
                                 </td>
                             </tr>
-                        
+                            <tr class="d-md-none">
+                                <td colspan="4">
+                                    <div class="accordion inner-accordion" id="innerAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="innerHeadingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#innerCollapseOne" aria-expanded="false" aria-controls="innerCollapseOne">
+                                                View Details of Open AI
+                                            </button>
+                                            </h2>
+                                            <div id="innerCollapseOne" class="accordion-collapse collapse" aria-labelledby="innerHeadingOne" data-bs-parent="#innerAccordion">
+                                                <div class="accordion-body">
+                                                    <table class="table inner-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="dashboard-item">Application stage</td>
+                                                                <td>Cover letter</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="dashboard-item">Phone Screen</td>
+                                                                <td>Screen Call 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="dashboard-item">Interview</td>
+                                                                <td>Interview Round 2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="dashboard-item">Resolution</td>
+                                                                <td>Hired</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>Anthropic</td>
                                 <td>GEN AI Solution Architect</td>
@@ -92,11 +130,9 @@
                                 <td class="d-none d-md-table-cell">Screen Call 3</td>
                                 <td class="d-none d-md-table-cell">Waiting to schedule interview</td>
                                 <td class="d-none d-md-table-cell"></td>
-
-                                
                                 <td>
-                                    <button type="button" class="btn btn-success btn-edit m-1 px-md-4" data-job-app-id="6629a1370ea7639201a6642e">Select/View</button>
-                                    <button type="button" class="btn btn-success btn-update m-1 px-md-3" data-bs-toggle="modal" data-bs-target="#jobAppModal" data-jobappid="6629a1370ea7639201a6642e">Update Status</button>
+                                    <button type="button" class="btn btn-success btn-edit m-1 px-4" data-job-app-id="6629a1370ea7639201a6642e">Select/View</button>
+                                    <button type="button" class="btn btn-success btn-update m-1 px-3" data-bs-toggle="modal" data-bs-target="#jobAppModal" data-jobappid="6635500d0ea7639201a6643f">Update Status</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -104,7 +140,12 @@
                 </div>
             </div>
         </div>
-    </main>          
+    </main>
+    <footer>
+        <div class="container mt-5">
+            <p class="text-center" id="copyright">© 2023 JobsGuru.ai All rights reserved.</p>
+        </div>
+    </footer>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

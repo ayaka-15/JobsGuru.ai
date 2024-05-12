@@ -1,0 +1,23 @@
+/* about us */
+#title-aboutus{
+    letter-spacing: 0.02em;
+}
+.aboutUs-image-fit{
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.title-team{
+    margin-top: 100px;
+}
+.description-team{
+    margin-bottom: 70px;
+}
+.card-header, .card-footer{
+    background-color: #ffffff;
+    border: none;
+}
+.img{
+    width: 170px;
+    height: 170px;
+}

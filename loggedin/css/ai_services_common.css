@@ -1,0 +1,52 @@
+/* upload_files / job_resume_match / cover_letter_question */
+.nav-tabs{
+  --bs-nav-tabs-link-hover-border-color: #ffffff;
+}
+.nav-link{
+--bs-nav-link-color: #000000;
+font-size: 18px;
+}
+.nav-link.active{
+--bs-nav-tabs-link-active-border-color: #172249;
+border-top: 0px solid #172249;
+border-right: 0px solid #172249;
+border-left: 0px solid #172249;
+border-bottom: 4px solid #172249;
+font-weight: 700;
+}
+.maintabs-upload-files, .maintabs-match-tewak-resume, .maintabs-cover-letter{
+  border-bottom: 1px solid #DEE2E6;
+}
+.drop-area {
+  border: 2px dashed #B1B1B1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.material-icons-outlined{
+  font-size: 50px;
+  color: #B1B1B1;
+}
+#job-description-drop-area > p, #resume-drop-area > p{
+  color: #B1B1B1;
+}
+#jobRequirementsTextarea, #jobResumeMatchTextarea, #tweakResumeTextarea, #coverLetterTextarea, #interviewQuestionTextarea{
+  width: 100%;
+  height: 250px;
+  border: 2px solid #B1B1B1;
+}
+.submit-btn, .download-btn{
+  background-color: #31AA52;
+  color: #ffffff;
+  padding: 5px 50px;
+  border: none;
+  border-radius: 8px;
+}
+.clear-btn{
+  background-color: #6C757D;
+  color: #ffffff;
+  padding: 5px 57px;
+  border: none;
+  border-radius: 8px;
+}

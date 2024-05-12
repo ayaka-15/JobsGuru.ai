@@ -1,0 +1,14 @@
+/* sign up */
+#form-signup{
+    background-color: #172249;
+    width: 950px;
+    padding: 10px 100px 40px 100px;
+    border-radius: 8px;
+}
+#btn-signup{
+    padding: 0 80px 0 80px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 17px;
+}

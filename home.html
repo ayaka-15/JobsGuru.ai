@@ -22,11 +22,8 @@
 </head>
 <body>
     <header>
-        <include src="./header.html"></include>
-    </header>
-    <!-- <header> -->
         <!-- Navigation Section -->
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="/frontend/home.html">
                 <img src="img/logo.png" width="80" height="80" alt="JobsGuru.ai brand logo">
             </a>
@@ -61,7 +58,7 @@
                 </ul>
             </div>
         </nav>
-    </header> -->
+    </header>
     <main>
         <!-- Content Section -->
         <section id="header-home">
@@ -174,7 +171,7 @@
                         <div class="col-6 w-100 text-center" id="area-signupnow">
                             <p><strong>Free Account Available</strong></p>
                             <p>Only Takes 2 Minutes</p>
-                            <button type="button" class="wide-button btn btn-success mx-auto d-block btn-click rounded-pill" id="btn-signupnow" onclick="location.href='/frontend/signup.html'">Sign Up Now!</button>
+                            <button type="button" class="wide-button btn btn-success mx-auto d-block btn-click" id="btn-signupnow" onclick="location.href='/frontend/signup.html'">Sign Up Now!</button>
                         </div>
                     </div>
                 </div>
@@ -182,7 +179,9 @@
         </section>
     </main>
     <footer>
-        <include src="./footer.html"></include>
+        <div class="container">
+            <p class="text-center" id="copyright">© 2023 JobsGuru.ai All rights reserved.</p>
+        </div>
     </footer>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

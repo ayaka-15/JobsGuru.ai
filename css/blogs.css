@@ -1,0 +1,21 @@
+/* Blogs */
+.card{
+    border: none;
+}
+.card-style{
+    background-color: #172249;
+    color: #ffffff;
+}
+.img-blogs{
+    background-repeat: no-repeat;            
+    width:240px;
+    height:300pX;
+    object-fit: cover;
+    border-radius: 8px;
+}
+a{
+    text-decoration-thickness: 2px;
+}
+.title-blogs{
+    font-size: 25px;
+}
