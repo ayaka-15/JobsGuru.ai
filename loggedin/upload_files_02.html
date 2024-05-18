@@ -32,6 +32,7 @@
             <nav class="navbar navbar-expand-md text-center navbar-dark">
                 <div class="row row-cols-md-2 row-cols-1 align-items-center">
                     <a class="active-img col-2 col-md-2 p-0" href="/frontend/loggedin/dashboard.html"><img src="../img/logo.png" width="80" height="80"></a>
+                    <!-- for laptop design -->
                     <div class="d-none d-md-block col-md-7 text-start p-0">
                         <span class="companyName">Company name :</span><span class="companyNameDisplay"> Google </span>
                         <span class="jobTitle">Job Title :</span><span class="jobTitleDisplay"> Product Manager </span>
@@ -44,35 +45,70 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 
+                    <!-- for laptop design -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav col-md-12">
-                            <li class="nav-item col-md-2">
+                        <ul class="navbar-nav col-md-12 custom-col-md-7 d-none d-md-flex">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication">Dashboard</button></a>
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/upload_files.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-current">Upload Documents</button></a>
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/job_resume_match.html" class=""><button type="button" class="btn-jobApplication">Match and Tweak Resume</button></a>
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/cover_letter_question.html" class="">
                                     <button type="button" class="btn-jobApplication">
                                         Cover Letter &amp;<br>
-                                        Question &amp; Mock
+                                        Interview Question
                                     </button>
                                 </a>
                             </li>
-                            <li class="nav-item col-md-2">
-                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication">Misc.</button></a> 
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/mock_interview.html" class=""><button type="button" class="btn-jobApplication">Mock Interview</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-ai-services">Misc.</button></a> 
+                            </li>
+                        </ul>
+
+                        <!-- for mobile design -->
+                        <ul class="navbar-nav col-12 d-block d-md-none">
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication">Dashboard</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/upload_files.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-current">Upload Documents</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/job_resume_match.html" class=""><button type="button" class="btn-jobApplication">Match and Tweak Resume</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/cover_letter_question.html" class="">
+                                    <button type="button" class="btn-jobApplication">
+                                        Cover Letter &amp;<br>
+                                        Interview Question
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/mock_interview.html" class=""><button type="button" class="btn-jobApplication">Mock Interview</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-ai-services">Misc.</button></a> 
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <!-- for mobile design -->
             <div class="d-block d-md-none col-md-6 text-center mt-3">
                 <span class="companyName">Company name:</span><span class="companyNameDisplay"> Google </span><br>
                 <span class="jobTitle">Job Title:</span><span class="jobTitleDisplay"> Product Manager </span>

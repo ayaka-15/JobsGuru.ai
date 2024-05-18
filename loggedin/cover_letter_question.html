@@ -33,6 +33,7 @@
             <nav class="navbar navbar-expand-md text-center navbar-dark">
                 <div class="row row-cols-md-2 row-cols-1 align-items-center">
                     <a class="active-img col-2 col-md-2 p-0" href="/frontend/loggedin/dashboard.html"><img src="../img/logo.png" width="80" height="80"></a>
+                    <!-- for laptop design -->
                     <div class="d-none d-md-block col-md-7 text-start p-0">
                         <span class="companyName">Company name :</span><span class="companyNameDisplay"> Google </span>
                         <span class="jobTitle">Job Title :</span><span class="jobTitleDisplay"> Product Manager </span>
@@ -45,35 +46,70 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 
+                    <!-- for laptop design -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav col-md-12">
-                            <li class="nav-item col-md-2">
+                        <ul class="navbar-nav col-md-12 custom-col-md-7 d-none d-md-flex">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication">Dashboard</button></a>
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/upload_files.html" class=""><button type="button" class="btn-jobApplication">Upload Documents</button></a>
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/job_resume_match.html" class=""><button type="button" class="btn-jobApplication">Match and Tweak Resume</button></a>
                             </li>
-                            <li class="nav-item col-md-2">
+                            <li class="nav-item">
                                 <a href="/frontend/loggedin/cover_letter_question.html" class="">
                                     <button type="button" class="btn-jobApplication btn-jobApplication-current">
                                         Cover Letter &amp;<br>
-                                        Question &amp; Mock
+                                        Interview Question
                                     </button>
                                 </a>
                             </li>
-                            <li class="nav-item col-md-2">
-                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication">Misc.</button></a> 
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/mock_interview.html" class=""><button type="button" class="btn-jobApplication">Mock Interview</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-ai-services">Misc.</button></a> 
+                            </li>
+                        </ul>
+
+                        <!-- for mobile design -->
+                        <ul class="navbar-nav col-12 d-block d-md-none">
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/dashboard.html" class=""><button type="button" class="btn-jobApplication">Dashboard</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/start_job_application.html" class=""><button type="button" class="btn-jobApplication">Start Job Application</button></a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/upload_files.html" class=""><button type="button" class="btn-jobApplication">Upload Documents</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/job_resume_match.html" class=""><button type="button" class="btn-jobApplication">Match and Tweak Resume</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/cover_letter_question.html" class="">
+                                    <button type="button" class="btn-jobApplication btn-jobApplication-current">
+                                        Cover Letter &amp;<br>
+                                        Interview Question
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/mock_interview.html" class=""><button type="button" class="btn-jobApplication">Mock Interview</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/frontend/loggedin/misc.html" class=""><button type="button" class="btn-jobApplication btn-jobApplication-ai-services">Misc.</button></a> 
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <!-- for mobile design -->
             <div class="d-block d-md-none col-md-6 text-center mt-3">
                 <span class="companyName">Company name:</span><span class="companyNameDisplay"> Google </span><br>
                 <span class="jobTitle">Job Title:</span><span class="jobTitleDisplay"> Product Manager </span>
@@ -89,29 +125,32 @@
                     <div class="maintabs-cover-letter">
                         <ul class="nav nav-tabs col-md-8 offset-md-2" id="mainTabs">
                             <li class="nav-item" style="width: 33.33%">
-                                <a class="nav-link active text-center" href="#coverLetter" data-bs-toggle="tab">Cover Letter</a>
+                                <a class="nav-link active text-center" href="#notice" data-bs-toggle="tab">Notice</a>
+                            </li>
+                            <li class="nav-item" style="width: 33.33%">
+                                <a class="nav-link text-center" href="#coverLetter" data-bs-toggle="tab">Cover Letter</a>
                             </li>
 
                             <li class="nav-item" style="width: 33.33%">
                                 <a class="nav-link text-center" href="#interviewQuestion" data-bs-toggle="tab">Interview Question</a>
                             </li>
-
-                            <li class="nav-item" style="width: 33.33%">
-                                <a class="nav-link text-center" href="#mockInterview" data-bs-toggle="tab">Mock Interview</a>
-                            </li>
                         </ul>
                     </div>
 
                     <div class="tab-content">
-                        <!-- start tabs - for Cover Letter -->
-                        <div class="tab-pane fade  show active" id="coverLetter">
-                            <p class="d-block mt-4 text-center lh-lg">
-                                Ready for a customized cover letter that resonates with hiring managers.<br>
-                                Please check the button and submit to generate a customized Cover Letter.
+                        <!-- start tabs - for Notice -->
+                        <div class="tab-pane fade show active" id="notice">
+                            <p class="mt-4 px-5">
+
                             </p>
-                            <div class="text-center">
-                                <button type="submit" class="wide-button btn btn-success btn-block btn-click submit-btn mt-1 mb-5">Submit Now</button>
-                            </div>
+                        </div>
+                        <!-- end tabs - for Notice -->
+                        
+                        <!-- start tabs - for Cover Letter -->
+                        <div class="tab-pane fade" id="coverLetter">
+                            <p class="d-block mt-4 text-center lh-lg">
+                                Ready for a customized cover letter that resonates with hiring managers.
+                            </p>
 
                             <!-- start Textarea to display the results -->
                             <div class="extracted-text-container text-center">
@@ -130,12 +169,8 @@
                         <!-- start tabs - for Interview Question -->
                         <div class="tab-pane fade" id="interviewQuestion">
                             <p class="d-block mt-4 text-center lh-lg">
-                                JobsGuru will generate likely Interview Questions.<br>
-                                Please check the button and submit for interview questions.
+                                JobsGuru will generate likely Interview Questions.
                             </p>
-                            <div class="text-center">
-                                <button type="submit" class="wide-button btn btn-success btn-block btn-click submit-btn mt-1 mb-5">Submit Now</button>
-                            </div>
 
                             <!-- start Textarea to display the results -->
                             <div class="extracted-text-container text-center">
@@ -150,132 +185,6 @@
                             </div>
                         </div>
                         <!-- end tabs - for Interview Question -->
-
-                        <!-- start tabs - for Mock Interview -->
-                        <div class="tab-pane fade" id="mockInterview">
-                            <div class="step-content-form">
-                                <div class="row">
-                                    <div class="col-md-8 offset-md-2">
-                                        <p class="d-block mt-4 text-center lh-lg"> When you want to practice and get human feedback and coaching just fill in the dates and time with time zone to request a mock interview sessions and one of our technical recruiter will reach out to you.</p>
-                    
-                                        <!-- add some spacing -->
-                                        <div style="height: 20px;"></div>
-                                                           
-                                        <form onsubmit="submitForm_Mock(event); return false;">
-                                            <!-- Option 1 -->
-                                            <div class="row">
-                                                <div class="col-md-4 mb-3">      
-                                                    <label for="date" class="col-1 col-form-label">Date</label>
-                                                    <div class="col">
-                                                        <div class="input-group date" id="datepicker">
-                                                            <input type="text" class="form-control" id="date" placeholder="Mock Interview Date">
-                                                                <span class="input-group-append">
-                                                                    <span class="input-group-text bg-light d-block">
-                                                                        <i class="fa fa-calendar"></i>
-                                                                    </span>
-                                                                </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                    
-                                                <div class="col-md-4 mb-3">
-                                                    <label for="date" class="col-1 col-form-label">Time</label>
-                                                    <div class="col">
-                                                        <div class="input-group" data-placement="bottom" data-align="bottom" data-autoclose="true">
-                                                            <input type="text" class="form-control" id="time" placeholder="Preferred Interview Time">
-                                                            <!-- <span class="input-group-text bg-light d-block"> -->
-                                                            <!-- <i class="bi bi-clock"></i> -->
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                    
-                                                <div class="col-md-4 mb-3">
-                                                    <label for="USTZ" class="col-1 col-form-label">TimeZone</label>
-                                                    <div class="col">
-                                                        <div class="input-group">
-                                                            <select name="US_TimeZone" id="USTZ" class="form-control">
-                                                                <option value="EST">Eastern Standard Time</option>
-                                                                <option value="CST">Central Standard Time</option>
-                                                                <option value="MST">Mountain Standard Time</option>
-                                                                <option value="PST">Pacific Standard Time</option>
-                                                            </select>
-                                                            <!-- You can uncomment and use this icon if needed
-                                                            <span class="input-group-text bg-light d-block">
-                                                                <i class="bi bi-pin-map-fill"></i>
-                                                            </span>
-                                                            -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end of option 1 -->
-                                    
-                                            <!-- option 2-->
-                                            <div class="row">
-                                                <div class="col-md-4 mb-3">      
-                                                    <label for="date" class="col-1 col-form-label">Date</label>
-                                                    <div class="col">
-                                                        <div class="input-group date" id="datepicker2">
-                                                            <input type="text" class="form-control" id="date2" placeholder="Mock Interview Date">
-                                                                <span class="input-group-append2">
-                                                                    <span class="input-group-text bg-light d-block">
-                                                                        <i class="fa fa-calendar"></i>
-                                                                    </span>
-                                                                </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                    
-                                                <div class="col-md-4 mb-3">
-                                                    <label for="date" class="col-1 col-form-label">Time</label>
-                                                    <div class="col">
-                                                        <div class="input-group" data-placement="bottom" data-align="bottom" data-autoclose="true">
-                                                            <input type="text" class="form-control" id="time2" placeholder="Preferred Interview Time">
-                                                            <!-- <span class="input-group-text bg-light d-block"> -->
-                                                            <!-- <i class="bi bi-clock"></i> -->
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                    
-                                                <div class="col-md-4 mb-3">
-                                                    <label for="USTZ" class="col-1 col-form-label">TimeZone</label>
-                                                    <div class="col">
-                                                        <div class="input-group">
-                                                            <select name="US_TimeZone" id="USTZ2" class="form-control">
-                                                                <option value="EST">Eastern Standard Time</option>
-                                                                <option value="CST">Central Standard Time</option>
-                                                                <option value="MST">Mountain Standard Time</option>
-                                                                <option value="PST">Pacific Standard Time</option>
-                                                            </select>
-                                                            <!-- You can uncomment and use this icon if needed
-                                                            <span class="input-group-text bg-light d-block">
-                                                                <i class="bi bi-pin-map-fill"></i>
-                                                            </span>
-                                                            -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end of option 2 -->
-                                
-                                            <div class="row">
-                                                <div class="col-md-12 d-flex justify-content-center mt-3">
-                                                    <button type="reset" class="btn btn-secondary clear-btn m-md-1 mx-1 my-3">Clear</button>
-                                                    
-                                                    <!-- Spacer div with a width of one column -->
-                                                    <div class="col-1"></div> 
-                                            
-                                                    <button type="submit" class="btn btn-success submit-btn m-md-1 mx-1 my-3">Submit</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end tabs - for Mock Interview -->
                     </div>
                 </div>
             </div>
