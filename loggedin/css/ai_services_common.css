@@ -1,17 +1,25 @@
 /* upload_files / job_resume_match / cover_letter_question */
+.nav{
+  --bs-link-hover-color: #ffffff;
+}
 .nav-tabs{
   --bs-nav-tabs-link-hover-border-color: #ffffff;
 }
 .nav-link{
---bs-nav-link-color: #000000;
+--bs-nav-link-color: #ffffff;
+/* background-color: #5B606D; */
+background-color: #31AA52;
 font-size: 18px;
+margin: 0 3px;
+}
+.nav-link:hover{
+  /* background-color: #42526E; */
+  background-color: #157347;
 }
 .nav-link.active{
---bs-nav-tabs-link-active-border-color: #172249;
-border-top: 0px solid #172249;
-border-right: 0px solid #172249;
-border-left: 0px solid #172249;
-border-bottom: 4px solid #172249;
+--bs-nav-tabs-link-active-color: #ffffff;
+/* --bs-nav-tabs-link-active-bg: #172249; */
+--bs-nav-tabs-link-active-bg: #157347;
 font-weight: 700;
 }
 .maintabs-upload-files, .maintabs-match-tewak-resume, .maintabs-cover-letter{
