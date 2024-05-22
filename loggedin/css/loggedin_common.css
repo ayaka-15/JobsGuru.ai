@@ -7,6 +7,10 @@ body{
 /* common parts */
 h1{
   letter-spacing: 0.05rem;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
 }
 .btn-success{
   --bs-btn-bg: #31AA52;
