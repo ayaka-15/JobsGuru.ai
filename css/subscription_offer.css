@@ -1,0 +1,37 @@
+/* subscription offer */
+.description{
+    font-size: 19px;
+}
+.card-header{
+    background-color: #172249;
+    color: #ffffff;
+}
+.pricing-card-title {
+    font-size: 1.2rem;
+}
+.original-price {
+    text-decoration: line-through;
+    color: rgb(248, 13, 13);
+}
+.discounted-price {
+    font-size: 1.6rem;
+    color: green;
+}
+.btn-success{
+    font-size: 16px;
+}
+.card-feature{
+    --bs-border-width: 2px;
+    --bs-border-color-translucent: #EA4335;
+}
+.card-feature > .card-header{
+
+    background-color: #EA4335;
+    color: #ffffff;
+}
+.card-feature > .card-body > .btn-success{
+    --bs-btn-bg: #EA4335;
+    --bs-btn-border-color: #EA4335;
+    --bs-btn-hover-bg: #C6241D;
+    --bs-btn-hover-border-color: #C6241D; 
+}
