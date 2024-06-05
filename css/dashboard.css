@@ -1,0 +1,32 @@
+.table > thead{
+  --bs-table-bg: #172249;
+  --bs-table-color: #ffffff;
+  vertical-align: middle;
+}
+th{
+  border: 1px solid #ffffff;
+}
+.inner-accordion .accordion-body {
+  padding: 0;
+}
+.inner-table {
+  margin-bottom: 0;
+}
+.accordion{
+  --bs-accordion-btn-bg: #5B606D;
+  --bs-accordion-btn-color: #ffffff;
+  --bs-accordion-active-bg: #D3D3D3;
+  --bs-accordion-active-color: #ffffff;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.15rem #B0B0B0;
+}
+.accordion-button.collapsed{
+  --bs-accordion-btn-bg: #5B606D;
+  --bs-accordion-btn-color: #ffffff;
+}
+.accordion-button:not(.collapsed)::after, .accordion-button.collapsed::after{   
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+.dashboard-item{
+  background-color: #172249 !important;
+  color: #ffffff !important;
+}

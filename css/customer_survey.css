@@ -1,0 +1,18 @@
+/* customer survey */
+.submit-btn{
+    background-color: #31AA52;
+    color: #ffffff;
+    padding: 5px 50px;
+    border: none;
+    border-radius: 8px;
+}
+.reset-btn{
+    background-color: #6C757D;
+    color: #ffffff;
+    padding: 5px 56px;
+    border: none;
+    border-radius: 8px;
+}
+textarea{
+    width: 90%;
+}

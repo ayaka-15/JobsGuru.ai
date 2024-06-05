@@ -1,0 +1,13 @@
+/* Header for ai services */
+@media (min-width: 768px) {
+    .navbar-nav .custom-col-md-7 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .custom-col-md-7 > .nav-item {
+        flex: 0 0 auto;
+        width: calc(100% / 7); /* Split into 7 columns */
+      }      
+  }
