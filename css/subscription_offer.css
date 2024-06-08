@@ -20,18 +20,15 @@
 .btn-success{
     font-size: 16px;
 }
+.card{
+    --bs-border-width: 2px;
+}
 .card-feature{
     --bs-border-width: 2px;
-    --bs-border-color-translucent: #EA4335;
+    --bs-border-color-translucent: #31AA52;
 }
 .card-feature > .card-header{
-
-    background-color: #EA4335;
+    background-color: #31AA52;
     color: #ffffff;
 }
-.card-feature > .card-body > .btn-success{
-    --bs-btn-bg: #EA4335;
-    --bs-btn-border-color: #EA4335;
-    --bs-btn-hover-bg: #C6241D;
-    --bs-btn-hover-border-color: #C6241D; 
-}
+
