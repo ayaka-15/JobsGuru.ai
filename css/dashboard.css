@@ -30,3 +30,13 @@ th{
   background-color: #172249 !important;
   color: #ffffff !important;
 }
+.btn-update{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.btn-edit{
+  padding-left: 29px;
+  padding-right: 29px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
